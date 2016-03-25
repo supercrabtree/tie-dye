@@ -53,7 +53,6 @@ function rgbToHsl(r, g, b) {
       break;
     }
     h /= 6;
-    h = h * 360;
   }
 
   return ({

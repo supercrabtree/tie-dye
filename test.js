@@ -6,8 +6,8 @@ const roundTo2Decimal = (x) => Math.round(x*100)/100;
 const roundObject = mapValues(roundTo2Decimal);
 
 test('rgbToHsl', t => {
-  t.same(roundObject(rgbToHsl(128, 255, 0)), { h:89.88,  s:1,   l:0.5  });
-  t.same(roundObject(rgbToHsl(234, 12, 35)), { h:353.78, s:0.9, l:0.48 });
+  t.same(roundObject(rgbToHsl(128, 255, 0)), { h:0.25,  s:1,   l:0.5  });
+  t.same(roundObject(rgbToHsl(234, 12, 35)), { h:0.98, s:0.9, l:0.48 });
 });
 
 test('hslToRgb', t => {
