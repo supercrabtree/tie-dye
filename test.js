@@ -1,5 +1,5 @@
 import test from 'ava';
-import { hslToRgb, rgbToHsl } from './src';
+import { hslToRgb, rgbToHsl } from './';
 import { mapValues } from 'lodash/fp';
 
 const roundTo2Decimal = (x) => Math.round(x*100)/100;
