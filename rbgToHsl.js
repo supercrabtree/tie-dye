@@ -32,6 +32,7 @@ function rgbToHsl(r, g, b) {
       break;
     }
     h /= 6;
+    h *= 360;
   }
 
   return ({

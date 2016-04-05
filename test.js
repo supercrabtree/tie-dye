@@ -14,8 +14,8 @@ test('rgbToHsl correctly converts', t => {
   var roundedHsl1 = roundObject(rgbToHsl(128, 255, 0));
   var roundedHsl2 = roundObject(rgbToHsl(234, 12, 35));
 
-  t.same(roundedHsl1, { h:0.25, s:1,   l:0.5  });
-  t.same(roundedHsl2, { h:0.98, s:0.9, l:0.48 });
+  t.same(roundedHsl1, { h:89.88, s:1,   l:0.5  });
+  t.same(roundedHsl2, { h:353.78, s:0.9, l:0.48 });
 
 });
 
