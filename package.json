@@ -3,6 +3,11 @@
   "version": "0.0.1",
   "description": "A simple modular color converter.",
   "main": "index.js",
+  "files" : [
+    "hslToRgb.js",
+    "rgbToHsl.js",
+    "hueToRgb.js"
+  ],
   "scripts": {
     "test": "ava",
     "test-watch": "ava --fail-fast --watch"
