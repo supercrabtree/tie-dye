@@ -1,11 +1,11 @@
 {
   "name": "tie-dye",
   "version": "0.0.1",
-  "description": "Color manipulation lib",
+  "description": "Convert color formats",
   "main": "index.js",
   "scripts": {
     "test": "ava",
-    "watch-n-test": "npm test -- --watch"
+    "test-watch": "ava --fail-fast --watch"
   },
   "repository": {
     "type": "git",
@@ -13,6 +13,8 @@
   },
   "keywords": [
     "color",
+    "convert",
+    "format",
     "hsl",
     "rgb",
     "tie",
