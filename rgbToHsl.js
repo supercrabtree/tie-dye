@@ -4,7 +4,7 @@
  * @param {number} r - A value from 0 - 255
  * @param {number} g - A value from 0 - 255
  * @param {number} b - A value from 0 - 255
- * @returns {object} With the signature {h: 0-359, s: 0-1, l: 0-1}
+ * @returns {object} With the signature {h: 0-359, s: 0-100, l: 0-100}
  */
 function rgbToHsl(r, g, b) {
 
@@ -33,6 +33,8 @@ function rgbToHsl(r, g, b) {
     }
     h /= 6;
     h *= 360;
+    s *= 100;
+    l *= 100;
   }
 
   return ({

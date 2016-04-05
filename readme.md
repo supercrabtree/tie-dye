@@ -11,7 +11,7 @@ import rgbToHsl from 'tie-dye/rgbToHsl';
 
 const dreamyRedHsl = rgbToHsl(222, 67, 67);
 
-console.log(dreamyRedHsl); // => { h: 0, s: 0.7013574660633485, l: 0.5666666666666667 }
+console.log(dreamyRedHsl); // => { h: 0, s: 70.13574660633485, l: 56.666666666666664 }
 ```
 
 ##### HSL to RGB
@@ -19,7 +19,7 @@ console.log(dreamyRedHsl); // => { h: 0, s: 0.7013574660633485, l: 0.56666666666
 ```js
 import hslToRgb from 'tie-dye/hslToRgb';
 
-const foamGreenRgb = hslToRgb(96, 0.46, 0.59);
+const foamGreenRgb = hslToRgb(96, 46, 59);
 
 console.log(foamGreenRgb); // => { r: 140.83139999999997, g: 198.543, b: 102.35699999999997 }
 ```
@@ -34,9 +34,9 @@ import hslToRgb from 'tie-dye/hslToRgb';
 
 const hslObjectToRgb = obj => hslToRgb(obj.h, obj.s, obj.l);
 
-const foamGreenHsl = {h: 96, s: 0.46, l: 0.59};
+const foamGreenHsl = {h: 96, s: 46, l: 59};
 
-const foamGreenRgb = hslObjectToRgb(96, 0.46, 0.59);
+const foamGreenRgb = hslObjectToRgb(foamGreenHsl);
 
 console.log(foamGreenRgb); // => { r: 140.83139999999997, g: 198.543, b: 102.35699999999997 }
 ```
@@ -50,7 +50,7 @@ import { mapValues } from 'lodash/fp';
 const roundTo2Decimal = x => Math.round(x * 100) / 100;
 const roundObject = mapValues(roundTo2Decimal);
 
-const foamGreenRgb = roundObject(hslToRgb(96, 0.46, 0.59));
+const foamGreenRgb = roundObject(hslToRgb(96, 46, 59));
 
 console.log(foamGreenRgb); // => { r: 140.83, g: 198.54, b: 102.36 }
 ```

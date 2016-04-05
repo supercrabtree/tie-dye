@@ -4,13 +4,15 @@ var hueToRgb = require('./hueToRgb');
  * Convert a color from HSL to RGB
  *
  * @param {number} h - A value from 0 - 360
- * @param {number} s - A value from 0 - 1
- * @param {number} l - A value from 0 - 1
+ * @param {number} s - A value from 0 - 100
+ * @param {number} l - A value from 0 - 100
  * @returns {object} With the signature {r: 0-255, g: 0-255, b: 0-255}
  */
 function hslToRgb(h, s, l) {
 
   h /= 360;
+  s /= 100;
+  l /= 100;
 
   var r, g, b;
 
