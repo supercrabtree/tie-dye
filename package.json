@@ -1,7 +1,7 @@
 {
   "name": "tie-dye",
   "version": "0.0.1",
-  "description": "Convert color formats",
+  "description": "A simple modular color converter.",
   "main": "index.js",
   "scripts": {
     "test": "ava",
@@ -14,11 +14,13 @@
   "keywords": [
     "color",
     "convert",
+    "converter",
+    "dye",
     "format",
     "hsl",
+    "modular",
     "rgb",
     "tie",
-    "dye",
     "tie-dye"
   ],
   "author": "George Crabtree",
