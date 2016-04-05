@@ -1,7 +1,5 @@
 ![tie-dye](https://raw.githubusercontent.com/supercrabtree/tie-dye/master/media/tie-dye-header.jpg)
 
-Tie-dye is a simple modular color converter.
-
 Although there are a bunch of color conversion libraries on npm, I couldn't find one where it was simple to just import the conversions you want. While importing a library is not a big deal in node, for the browser there is not reason to load a whole library of code you are not using. Normally I find I only need one conversion.
 
 ### Current API
