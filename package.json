@@ -1,6 +1,6 @@
 {
   "name": "tie-dye",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple modular color converter.",
   "main": "index.js",
   "files" : [
