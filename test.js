@@ -6,6 +6,9 @@ const roundTo2Decimal = x => Math.round(x * 100) / 100;
 const roundObject = mapValues(roundTo2Decimal);
 
 
+console.log('tie-dye', Date.now());
+
+
 test('rgbToHsl correctly converts', t => {
 
   var roundedHsl1 = roundObject(rgbToHsl(128, 255, 0));
