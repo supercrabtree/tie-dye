@@ -65,7 +65,5 @@ function rgbToHsl(r, g, b) {
   });
 }
 
-module.exports = {
-  rgbToHsl: rgbToHsl,
-  hslToRgb: hslToRgb
-};
+exports.rgbToHsl = rgbToHsl;
+exports.hslToRgb = hslToRgb;
