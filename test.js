@@ -1,6 +1,10 @@
 import test from 'ava';
-import { hslToRgb, rgbToHsl } from './';
 import { mapValues } from 'lodash/fp';
+import {
+  hexToRgb,
+  hslToRgb,
+  rgbToHsl
+} from './';
 
 const roundTo2Decimal = x => Math.round(x * 100) / 100;
 const roundObject = mapValues(roundTo2Decimal);
@@ -27,6 +31,14 @@ test('hslToRgb correctly converts', t => {
 
   t.same(roundedRgb1, { r:140.25, g:114.75, b:121.98 });
   t.same(roundedRgb2, { r:89.51,  g:103.81, b:140    });
+
+});
+
+test('hexToRgb correctly converts', t => {
+
+  t.same(hexToRgb('#FF0000'), {r: 255, g: 0, b: 0});
+  t.same(hexToRgb('#172B7B'), {r: 23, g: 43, b: 123});
+  t.same(hexToRgb('#DF8F0D'), {r: 223, g: 143, b: 13});
 
 });
 
