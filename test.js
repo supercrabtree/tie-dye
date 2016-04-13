@@ -3,6 +3,7 @@ import { mapValues } from 'lodash/fp';
 import {
   hexToRgb,
   hslToRgb,
+  rgbToHex,
   rgbToHsl
 } from './';
 
@@ -31,6 +32,15 @@ test('hslToRgb correctly converts', t => {
 
   t.same(roundedRgb1, { r:140.25, g:114.75, b:121.98 });
   t.same(roundedRgb2, { r:89.51,  g:103.81, b:140    });
+
+});
+
+
+test('rgbToHex correctly converts', t => {
+
+  t.same(rgbToHex(255, 0, 0), '#FF0000');
+  t.same(rgbToHex(23, 43, 123), '#172B7B');
+  t.same(rgbToHex(223, 143, 13), '#DF8F0D');
 
 });
 
