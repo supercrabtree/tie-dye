@@ -4,14 +4,53 @@ Although there are a bunch of color conversion libraries on npm, I couldn't find
 
 ### Current API
 
+##### Hexadecimal to HSL
+
+```js
+import hexToHsl from 'tie-dye/hexToHsl';
+
+const paleCornflowerBlueHsl = hexToHsl('#ABCDEF');
+
+console.log(paleCornflowerBlueHsl); // => { h: 210, s: 68, l: 80.3921568627451}
+```
+##### Hexadecimal to RGB
+
+```js
+import hexToRgb from 'tie-dye/hexToRgb';
+
+const paleCornflowerBlueRgb = hexToRgb('#ABCDEF');
+
+console.log(paleCornflowerBlueRgb); // => { r: 171, g: 205, b: 239 }
+```
+
+##### RGB to Hexadecimal
+
+```js
+import rgbToHex from 'tie-dye/rgbToHex';
+
+const mintGreenHex = rgbToHex(152, 255, 152);
+
+console.log(mintGreenHex); // => '#98FF98'
+```
+
 ##### RGB to HSL
 
 ```js
 import rgbToHsl from 'tie-dye/rgbToHsl';
 
-const dreamyRedHsl = rgbToHsl(222, 67, 67);
+const dreamyRedHsl = rgbToHsl(139, 255, 138);
 
 console.log(dreamyRedHsl); // => { h: 0, s: 70.13574660633485, l: 56.666666666666664 }
+```
+
+##### HSL to Hexadecimal
+
+```js
+import hslToHex from 'tie-dye/hslToHex';
+
+const mauveHex = hslToHex(276, 100, 85);
+
+console.log(mauveHex); // => '#e0B3FF'
 ```
 
 ##### HSL to RGB
@@ -25,7 +64,7 @@ console.log(foamGreenRgb); // => { r: 140.83139999999997, g: 198.543, b: 102.356
 ```
 
 ### Keeping it simple 
-In the spirit of unix this library does not aim to round your results, or allow you to pass arguments with r g b / h s l properties, etc. If you wanna do that here are some really simple examples.
+In the spirit of keeping it unixy this library does not aim to round your results, or allow you to pass arguments with r g b / h s l properties, etc. If you wanna do that here are some really simple examples.
 
 ##### Passing objects with h s l properties
 
