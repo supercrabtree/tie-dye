@@ -70,9 +70,10 @@ test('hexToHsl correctly converts', t => {
 
 test('hslToHex correctly converts', t => {
 
+  t.same(hslToHex(276, 100, 85), '#E0B3FF');
   t.same(hslToHex(0, 100, 50),   '#FF0000');
   t.same(hslToHex(343, 0, 51),   '#828282');
   t.same(hslToHex(0, 0, 51),     '#828282');
-  t.same(hslToHex(223, 100, 75), '#80FFFF');
+  t.same(hslToHex(223, 100, 75), '#80A4FF');
 
 });
