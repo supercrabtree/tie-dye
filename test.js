@@ -1,6 +1,7 @@
 import test from 'ava';
 import { mapValues } from 'lodash/fp';
 import {
+  hexToHsl,
   hexToRgb,
   hslToRgb,
   rgbToHex,
@@ -52,3 +53,15 @@ test('hexToRgb correctly converts', t => {
 
 });
 
+
+test('hexToHsl correctly converts', t => {
+
+  var roundedHsl1 = roundObject(hexToHsl('#4086E7'));
+  var roundedHsl2 = roundObject(hexToHsl('#F0DBE4'));
+  var roundedHsl3 = roundObject(hexToHsl('#C9C9C9'));
+
+  t.same(roundedHsl1, {h: 214.85, s: 77.67, l: 57.84});
+  t.same(roundedHsl2, {h: 334.29, s: 41.18, l: 90});
+  t.same(roundedHsl3, {h: 0, s: 0, l: 0.79});
+
+});
