@@ -1,9 +1,9 @@
 {
   "name": "tie-dye",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "A simple modular color converter.",
   "main": "index.js",
-  "files" : [
+  "files": [
     "hslToRgb.js",
     "rgbToHsl.js",
     "hueToRgb.js"
