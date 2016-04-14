@@ -4,9 +4,13 @@
   "description": "A simple modular color converter.",
   "main": "index.js",
   "files": [
+    "hexToHsl.js",
+    "hexToRgb.js",
+    "hslToHex.js",
     "hslToRgb.js",
-    "rgbToHsl.js",
-    "hueToRgb.js"
+    "hueToRgb.js",
+    "rgbToHex.js",
+    "rgbToHsl.js"
   ],
   "scripts": {
     "test": "ava",
